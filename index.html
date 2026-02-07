@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To My Dearest Puspa - Happy Valentine's Day 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ========== CSS VARIABLES & RESET ========== */
+:root {
+  --deep-rose: #8B0000;
+  --medium-rose: #C41E3A;
+  --light-pink: #E8A0BF;
+  --gold: #D4A843;
+  --cream: #FDF6E3;
+  --dark-bg: #1a0a0a;
+  --font-script: 'Great Vibes', cursive;
+  --font-handwriting: 'Dancing Script', cursive;
+  --font-body: 'Poppins', sans-serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #fff;
+  overflow-x: hidden;
+  background: var(--dark-bg);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========== SCROLL ANIMATIONS ========== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ========== SECTION 1: WELCOME / HERO ========== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  background: radial-gradient(ellipse at center, #2d0a0a 0%, #0d0000 70%, #000 100%);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(196, 30, 58, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 70% 30%, rgba(139, 0, 0, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+#hearts-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.floating-heart {
+  position: absolute;
+  bottom: -60px;
+  font-size: 20px;
+  animation: floatHeart linear infinite;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes floatHeart {
+  0% {
+    opacity: 0;
+    transform: translateY(0) rotate(0deg) scale(0.5);
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-50vh) rotate(180deg) scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-110vh) rotate(360deg) scale(0.3);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-family: var(--font-script);
+  font-size: clamp(3rem, 8vw, 6rem);
+  color: var(--light-pink);
+  text-shadow: 0 0 40px rgba(232, 160, 191, 0.5), 0 0 80px rgba(196, 30, 58, 0.3);
+  margin-bottom: 1rem;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { text-shadow: 0 0 40px rgba(232, 160, 191, 0.5), 0 0 80px rgba(196, 30, 58, 0.3); }
+  50% { text-shadow: 0 0 60px rgba(232, 160, 191, 0.8), 0 0 120px rgba(196, 30, 58, 0.5); }
+}
+
+.hero-subtitle {
+  font-family: var(--font-handwriting);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+.begin-btn {
+  font-family: var(--font-handwriting);
+  font-size: 1.3rem;
+  padding: 1rem 3rem;
+  border: 2px solid var(--gold);
+  background: transparent;
+  color: var(--gold);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.begin-btn:hover {
+  background: var(--gold);
+  color: var(--dark-bg);
+  box-shadow: 0 0 30px rgba(212, 168, 67, 0.4);
+  transform: scale(1.05);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-15px); }
+}
+
+/* ========== SECTION 2: HER BEAUTY ========== */
+.section-her {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #2d1015 0%, #1a0610 50%, #1d0a10 100%);
+  position: relative;
+}
+
+.section-title {
+  font-family: var(--font-script);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-align: center;
+  color: var(--light-pink);
+  margin-bottom: 3rem;
+}
+
+.her-hero-frame {
+  max-width: 500px;
+  margin: 0 auto 3rem;
+  border: 4px solid var(--gold);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(212, 168, 67, 0.3), 0 20px 60px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.her-hero-frame::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border: 4px solid var(--gold);
+  border-radius: 16px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.her-hero-frame img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+
+.her-hero-frame:hover img {
+  transform: scale(1.03);
+}
+
+.her-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.photo-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+.photo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.love-message {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.love-message .quote {
+  font-family: var(--font-handwriting);
+  font-size: 1.4rem;
+  color: var(--light-pink);
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+/* ========== SECTION 3: WEDDING DAY ========== */
+.section-wedding {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #1a0000 0%, #2d0505 30%, #3a0a0a 60%, #1a0000 100%);
+  position: relative;
+}
+
+.section-wedding .section-title {
+  padding: 0 2rem;
+}
+
+.wedding-hero-banner {
+  width: 100%;
+  max-height: 70vh;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.wedding-hero-banner img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wedding-hero-banner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, #2d0505, transparent);
+}
+
+.wedding-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.wedding-photo {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.wedding-photo:hover {
+  transform: scale(1.02);
+}
+
+.wedding-photo img {
+  width: 100%;
+  height: auto;
+}
+
+.sindoor-photo {
+  border: 3px solid var(--gold);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(212, 168, 67, 0.4), 0 0 60px rgba(212, 168, 67, 0.2);
+  animation: sacredGlow 3s ease-in-out infinite;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.sindoor-photo:hover {
+  transform: scale(1.02);
+}
+
+@keyframes sacredGlow {
+  0%, 100% {
+    box-shadow: 0 0 30px rgba(212, 168, 67, 0.4), 0 0 60px rgba(212, 168, 67, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 50px rgba(212, 168, 67, 0.7), 0 0 100px rgba(212, 168, 67, 0.4), 0 0 150px rgba(212, 168, 67, 0.2);
+  }
+}
+
+.sindoor-photo img {
+  width: 100%;
+  height: auto;
+}
+
+.wedding-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.wedding-date {
+  font-family: var(--font-handwriting);
+  font-size: 1.8rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.wedding-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.wedding-text .ardhangini {
+  font-family: var(--font-handwriting);
+  font-size: 1.5rem;
+  color: var(--light-pink);
+  margin-top: 1.5rem;
+}
+
+/* ========== SECTION 4: ADVENTURES ========== */
+.section-adventures {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #0a0a1a 0%, #0d0d20 50%, #0a0a1a 100%);
+}
+
+.masonry-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  columns: 3;
+  column-gap: 1.2rem;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.masonry-item:hover {
+  transform: scale(1.02);
+}
+
+.masonry-item.featured {
+  column-span: all;
+  max-height: 500px;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.masonry-item:hover img {
+  transform: scale(1.05);
+}
+
+.masonry-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 1rem 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  font-family: var(--font-handwriting);
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.masonry-item:hover .masonry-caption {
+  transform: translateY(0);
+}
+
+/* ========== SECTION 5: ME ========== */
+.section-me {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #1a1520 0%, #201520 50%, #1a1018 100%);
+}
+
+.me-hero {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.me-hero:hover {
+  transform: scale(1.02);
+}
+
+.me-hero img {
+  width: 100%;
+  height: auto;
+}
+
+.me-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.me-grid .photo-card img {
+  height: 260px;
+}
+
+/* ========== SECTION 6: LOVE LETTER + FINALE ========== */
+.section-finale {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #2d0000 0%, #3a0505 30%, #2d0000 60%, #1a0000 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.love-letter {
+  max-width: 650px;
+  margin: 0 auto 4rem;
+  background: var(--cream);
+  color: #333;
+  padding: 3rem 2.5rem;
+  border-radius: 4px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), inset 0 0 100px rgba(0, 0, 0, 0.03);
+  position: relative;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    rgba(0, 0, 0, 0.05) 31px,
+    rgba(0, 0, 0, 0.05) 32px
+  );
+}
+
+.love-letter::before {
+  content: '';
+  position: absolute;
+  left: 60px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(196, 30, 58, 0.2);
+}
+
+.letter-date {
+  font-family: var(--font-handwriting);
+  font-size: 1.1rem;
+  color: #888;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.letter-greeting {
+  font-family: var(--font-handwriting);
+  font-size: 1.6rem;
+  color: var(--medium-rose);
+  margin-bottom: 1.5rem;
+}
+
+.letter-para {
+  font-family: var(--font-handwriting);
+  font-size: 1.15rem;
+  line-height: 2;
+  margin-bottom: 1.2rem;
+  color: #444;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.letter-para.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.letter-sign {
+  font-family: var(--font-script);
+  font-size: 2rem;
+  color: var(--medium-rose);
+  text-align: right;
+  margin-top: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s;
+}
+
+.letter-sign.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.finale-section {
+  text-align: center;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.finale-title {
+  font-family: var(--font-script);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  color: var(--light-pink);
+  text-shadow: 0 0 50px rgba(232, 160, 191, 0.6);
+  margin-bottom: 2rem;
+}
+
+.massive-heart {
+  font-size: clamp(5rem, 15vw, 10rem);
+  display: inline-block;
+  animation: heartbeat 1.2s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(196, 30, 58, 0.6));
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.15); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.1); }
+}
+
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* ========== LIGHTBOX ========== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.active {
+  display: flex;
+  opacity: 1;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1001;
+  transition: transform 0.3s;
+  line-height: 1;
+}
+
+.lightbox-close:hover {
+  transform: scale(1.2);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 1rem;
+  transition: color 0.3s;
+  z-index: 1001;
+}
+
+.lightbox-nav:hover {
+  color: #fff;
+}
+
+.lightbox-prev {
+  left: 1rem;
+}
+
+.lightbox-next {
+  right: 1rem;
+}
+
+/* ========== MUSIC CONTROL ========== */
+.music-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: rgba(26, 10, 10, 0.9);
+  color: var(--gold);
+  font-size: 1.3rem;
+  cursor: pointer;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.music-btn:hover {
+  background: var(--gold);
+  color: var(--dark-bg);
+  transform: scale(1.1);
+}
+
+.music-btn.playing {
+  animation: spinNote 3s linear infinite;
+}
+
+@keyframes spinNote {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ========== LAZY LOADING PLACEHOLDER ========== */
+.lazy-img {
+  background: linear-gradient(135deg, #2a1a1a, #1a0a0a);
+  min-height: 200px;
+  position: relative;
+}
+
+.lazy-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.05) 50%, transparent 100%);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.lazy-img.loaded {
+  min-height: auto;
+  background: none;
+}
+
+.lazy-img.loaded::before {
+  display: none;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .masonry-grid {
+    columns: 2;
+  }
+
+  .wedding-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .her-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .me-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .masonry-grid {
+    columns: 1;
+  }
+
+  .her-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .me-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .her-hero-frame {
+    max-width: 90%;
+  }
+
+  .love-letter {
+    padding: 2rem 1.5rem;
+    margin: 0 0.5rem 4rem;
+  }
+
+  .love-letter::before {
+    left: 30px;
+  }
+
+  .photo-card img,
+  .me-grid .photo-card img {
+    height: 220px;
+  }
+
+  .section-her,
+  .section-adventures,
+  .section-me,
+  .section-finale {
+    padding: 4rem 1rem;
+  }
+
+  .wedding-hero-banner img {
+    height: 40vh;
+  }
+
+  .lightbox-nav {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  .music-btn {
+    width: 42px;
+    height: 42px;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* ========== WELCOME MODAL ========== */
+.welcome-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: radial-gradient(ellipse at center, #2d0a0a 0%, #0d0000 70%, #000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.welcome-modal.dismissed {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.welcome-modal-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-heart {
+  font-size: clamp(4rem, 12vw, 8rem);
+  color: var(--medium-rose);
+  display: inline-block;
+  animation: heartbeat 1.2s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(196, 30, 58, 0.6));
+  margin-bottom: 2rem;
+}
+
+.welcome-btn {
+  display: block;
+  margin: 0 auto;
+  font-family: var(--font-handwriting);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  padding: 1.2rem 3.5rem;
+  border: 2px solid var(--gold);
+  background: transparent;
+  color: var(--gold);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  letter-spacing: 1px;
+  animation: btnPulse 2s ease-in-out infinite;
+}
+
+.welcome-btn:hover {
+  background: var(--gold);
+  color: var(--dark-bg);
+  box-shadow: 0 0 30px rgba(212, 168, 67, 0.4);
+  transform: scale(1.05);
+}
+
+@keyframes btnPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(212, 168, 67, 0.4); }
+  50% { box-shadow: 0 0 20px 10px rgba(212, 168, 67, 0.15); }
+}
+
+/* Pop burst effect */
+.pop-burst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(232, 160, 191, 0.8) 0%, rgba(196, 30, 58, 0.4) 40%, transparent 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+}
+
+.pop-burst.active {
+  animation: popExpand 0.8s ease-out forwards;
+}
+
+@keyframes popExpand {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    width: 300vmax;
+    height: 300vmax;
+    opacity: 0;
+  }
+}
+
+/* Pop particle sparks */
+.pop-particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 3;
+  animation: particleFly 0.8s ease-out forwards;
+}
+
+@keyframes particleFly {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--tx), var(--ty)) scale(0);
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Hidden audio player — no visual needed */
+</style>
+</head>
+<body>
+
+<!-- ==================== WELCOME MODAL ==================== -->
+<div class="welcome-modal" id="welcome-modal">
+  <div class="welcome-modal-content">
+    <div class="welcome-heart">&#10084;</div>
+    <button class="welcome-btn" id="welcome-btn">Click to Begin Our Story</button>
+  </div>
+  <div class="pop-burst" id="pop-burst"></div>
+</div>
+
+<!-- ==================== SECTION 1: WELCOME ==================== -->
+<section class="hero" id="hero">
+  <div id="hearts-container"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">To My Dearest Puspa</h1>
+    <p class="hero-subtitle">This Valentine's Day &mdash; A journey of two hearts becoming one</p>
+  </div>
+  <div class="scroll-indicator">&darr;</div>
+</section>
+
+<!-- ==================== SECTION 2: HER BEAUTY ==================== -->
+<section class="section-her" id="section-her">
+  <h2 class="section-title fade-in">The Most Beautiful Woman in My World</h2>
+
+  <div class="her-hero-frame fade-in photo-trigger" data-index="0">
+    <img class="lazy-img" data-src="wifie/IMG_20210424_184233.jpg" alt="My beautiful Puspa">
+  </div>
+
+  <div class="her-gallery">
+    <div class="photo-card fade-in photo-trigger" data-index="1">
+      <img class="lazy-img" data-src="wifie/222" alt="Puspa">
+    </div>
+    <div class="photo-card fade-in photo-trigger" data-index="2">
+      <img class="lazy-img" data-src="wifie/IMG_20240528_152208.jpg" alt="Puspa">
+    </div>
+    <div class="photo-card fade-in photo-trigger" data-index="3">
+      <img class="lazy-img" data-src="wifie/IMG_20230809_085559.jpg" alt="Puspa">
+    </div>
+  </div>
+
+  <div class="love-message fade-in">
+    <p>Of all the beauty this world has to offer, nothing compares to the radiance you carry with you every single day. Your smile lights up every room, your grace leaves everyone in awe, and your eyes hold a warmth that makes me fall in love all over again.</p>
+    <p class="quote">"In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine."</p>
+  </div>
+</section>
+
+<!-- ==================== SECTION 3: WEDDING DAY ==================== -->
+<section class="section-wedding" id="section-wedding">
+  <h2 class="section-title fade-in">The Day I Was Complete</h2>
+
+  <div class="wedding-hero-banner fade-in photo-trigger" data-index="4">
+    <img class="lazy-img" data-src="both/CNN_4453.JPG" alt="Our wedding - holding hands">
+  </div>
+
+  <div class="wedding-content">
+    <div>
+      <div class="wedding-photo fade-in-left photo-trigger" data-index="5">
+        <img class="lazy-img" data-src="both/IMG_20210424_183020.jpg" alt="Flower surprise">
+      </div>
+
+      <div class="sindoor-photo fade-in-left photo-trigger" data-index="6" style="margin-top: 2rem;">
+        <img class="lazy-img" data-src="both/Screenshot_20260208_004550.png" alt="Sacred sindoor moment">
+      </div>
+    </div>
+
+    <div class="wedding-text fade-in-right">
+      <div class="wedding-date">April 24, 2021</div>
+      <p>On this day, two souls became one. The moment I placed the sindoor on your forehead was the most sacred moment of my life &mdash; a promise I made not just to you, but to the universe.</p>
+      <p>Every flower I have ever given you carries a piece of my heart. Every look we have shared tells a story only we understand.</p>
+      <p class="ardhangini">"You are my ardhangini &mdash; my other half. Without you, I am incomplete."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SECTION 4: ADVENTURES ==================== -->
+<section class="section-adventures" id="section-adventures">
+  <h2 class="section-title fade-in">Every Journey is Better With You</h2>
+
+  <div class="masonry-grid" id="masonry-grid">
+    <!-- Featured photo spanning full width -->
+    <div class="masonry-item featured fade-in photo-trigger" data-index="7">
+      <img class="lazy-img" data-src="place we been to/IMG_20240609_103207.jpg" alt="Alpine lake - our adventure">
+      <div class="masonry-caption">Where mountains meet the sky...</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="8">
+      <img class="lazy-img" data-src="place we been to/IMG_20230409_060548.jpg" alt="Sunrise together">
+      <div class="masonry-caption">Chasing sunrises with you</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="9">
+      <img class="lazy-img" data-src="place we been to/IMG_20230409_060727.jpg" alt="Morning light">
+      <div class="masonry-caption">Golden mornings by your side</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="10">
+      <img class="lazy-img" data-src="place we been to/IMG_20230410_054446.jpg" alt="Mountain view">
+      <div class="masonry-caption">On top of the world together</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="11">
+      <img class="lazy-img" data-src="place we been to/IMG_20230410_054449.jpg" alt="Mountain panorama">
+      <div class="masonry-caption">Endless horizons, endless love</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="12">
+      <img class="lazy-img" data-src="place we been to/IMG_20230410_054511.jpg" alt="Scenic view">
+      <div class="masonry-caption">Adventures I treasure forever</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="13">
+      <img class="lazy-img" data-src="place we been to/IMG_20230410_061727.jpg" alt="Valley view">
+      <div class="masonry-caption">Through valleys and peaks</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="14">
+      <img class="lazy-img" data-src="place we been to/IMG_20230410_061728.jpg" alt="Mountain morning">
+      <div class="masonry-caption">Moments frozen in time</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="15">
+      <img class="lazy-img" data-src="place we been to/IMG_20230410_063359.jpg" alt="Landscape">
+      <div class="masonry-caption">Nature's beauty, our love story</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="16">
+      <img class="lazy-img" data-src="place we been to/IMG_20230510_180047.jpg" alt="Evening walk">
+      <div class="masonry-caption">Peaceful evenings, grateful hearts</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="17">
+      <img class="lazy-img" data-src="place we been to/IMG_20230617_172722.jpg" alt="Waterfall">
+      <div class="masonry-caption">Where waters fall, my heart rises</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="18">
+      <img class="lazy-img" data-src="place we been to/IMG_20230708_191456.jpg" alt="Temple visit">
+      <div class="masonry-caption">Praying for forever with you</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="19">
+      <img class="lazy-img" data-src="place we been to/IMG_20230709_121201.jpg" alt="Lake view">
+      <div class="masonry-caption">Reflections of our journey</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="20">
+      <img class="lazy-img" data-src="place we been to/IMG_20231028_102758.jpg" alt="Autumn adventure">
+      <div class="masonry-caption">Every season, every reason</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="21">
+      <img class="lazy-img" data-src="place we been to/IMG_20231028_105521.jpg" alt="Scenic trail">
+      <div class="masonry-caption">Walking hand in hand</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="22">
+      <img class="lazy-img" data-src="place we been to/IMG_20231028_105534.jpg" alt="Mountain trail">
+      <div class="masonry-caption">The path we chose together</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="23">
+      <img class="lazy-img" data-src="place we been to/IMG_20231029_063031.jpg" alt="Dawn view">
+      <div class="masonry-caption">Dawn of a new memory</div>
+    </div>
+
+    <div class="masonry-item fade-in photo-trigger" data-index="24">
+      <img class="lazy-img" data-src="place we been to/IMG_20231029_075253.jpg" alt="Morning hike">
+      <div class="masonry-caption">Every step with you is home</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SECTION 5: ME ==================== -->
+<section class="section-me" id="section-me">
+  <h2 class="section-title fade-in">The Man Who Is Nothing Without You</h2>
+
+  <div class="me-hero fade-in photo-trigger" data-index="25">
+    <img class="lazy-img" data-src="my/IMG_20240608_124837.jpg" alt="Saroj at the mountain">
+  </div>
+
+  <div class="me-grid">
+    <div class="photo-card fade-in photo-trigger" data-index="26">
+      <img class="lazy-img" data-src="my/IMG_20230425_200705.jpg" alt="Saroj">
+    </div>
+    <div class="photo-card fade-in photo-trigger" data-index="27">
+      <img class="lazy-img" data-src="my/IMG_20230609_204901.jpg" alt="Saroj">
+    </div>
+    <div class="photo-card fade-in photo-trigger" data-index="28">
+      <img class="lazy-img" data-src="my/IMG_20230617_173023.jpg" alt="Saroj">
+    </div>
+    <div class="photo-card fade-in photo-trigger" data-index="29">
+      <img class="lazy-img" data-src="my/IMG_20230722_222330.jpg" alt="Saroj">
+    </div>
+    <div class="photo-card fade-in photo-trigger" data-index="30">
+      <img class="lazy-img" data-src="my/IMG_20231029_075516.jpg" alt="Saroj">
+    </div>
+  </div>
+
+  <div class="love-message fade-in">
+    <p>Every photo of me is incomplete without you in the frame. These mountains I stand on, these sunsets I chase &mdash; they mean nothing if you are not there to share them with me. You are the reason behind every smile, every adventure, every breath I take.</p>
+  </div>
+</section>
+
+<!-- ==================== SECTION 6: LOVE LETTER + FINALE ==================== -->
+<section class="section-finale" id="section-finale">
+  <h2 class="section-title fade-in">Forever Yours</h2>
+
+  <div class="love-letter fade-in" id="love-letter">
+    <div class="letter-date">February 14, 2026</div>
+    <div class="letter-greeting">My Dearest Puspa,</div>
+
+    <p class="letter-para">As I write these words, my heart overflows with a love so deep that no language could ever capture it fully. You are not just the woman I married &mdash; you are the reason my life has meaning.</p>
+
+    <p class="letter-para">From the moment I first saw you, I knew my world would never be the same. Your eyes held a promise of forever, and your smile painted colors into a life I didn't know was grey.</p>
+
+    <p class="letter-para">Do you remember our wedding day? April 24, 2021 &mdash; the day the universe finally made sense. When I placed the sindoor on your maang, I wasn't just following tradition. I was making a vow with every fiber of my being: that I would love you, protect you, and stand by you through every sunrise and every storm.</p>
+
+    <p class="letter-para">Every journey we have taken together &mdash; every mountain we have climbed, every waterfall we have stood before, every sunrise we have chased &mdash; has only deepened my gratitude. Because the most beautiful view in the world will always be the one where you are standing beside me.</p>
+
+    <p class="letter-para">You are my strength when I am weak. You are my peace when the world is chaos. You are my home, no matter where we are. I may look like I am standing tall on those mountain tops, but the truth is, without you, I would crumble.</p>
+
+    <p class="letter-para">This Valentine's Day, I don't just want to say "I love you." I want you to feel it in every heartbeat, in every word on this page, in every photo that tells our story. You are the love of my life, my ardhangini, my forever.</p>
+
+    <p class="letter-para">I love you more than words could ever say, more than the mountains are tall, more than the rivers are deep. And I will spend every remaining day of my life proving it to you.</p>
+
+    <div class="letter-sign">Forever and always yours,<br>Saroj</div>
+  </div>
+
+  <div class="finale-section" id="finale-trigger">
+    <h2 class="finale-title fade-in">Happy Valentine's Day, Puspa</h2>
+    <div class="massive-heart">&#10084;</div>
+  </div>
+</section>
+
+<!-- ==================== LIGHTBOX ==================== -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev">&#10094;</button>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next">&#10095;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Photo">
+</div>
+
+<!-- ==================== CONFETTI CANVAS ==================== -->
+<canvas id="confetti-canvas"></canvas>
+
+<!-- ==================== MUSIC BUTTON ==================== -->
+<button class="music-btn" id="music-btn" title="Toggle Music">&#9835;</button>
+
+<!-- ==================== LOCAL AUDIO PLAYER ==================== -->
+<audio id="bg-music" loop preload="auto" autoplay>
+  <source src="Prasanna_vadanam_256kbps.webm" type="audio/webm">
+</audio>
+
+<!-- ==================== JAVASCRIPT ==================== -->
+<script>
+// ========== ALL PHOTO SOURCES (for lightbox navigation) ==========
+const allPhotos = [
+  'wifie/IMG_20210424_184233.jpg',
+  'wifie/222',
+  'wifie/IMG_20240528_152208.jpg',
+  'wifie/IMG_20230809_085559.jpg',
+  'both/CNN_4453.JPG',
+  'both/IMG_20210424_183020.jpg',
+  'both/Screenshot_20260208_004550.png',
+  'place we been to/IMG_20240609_103207.jpg',
+  'place we been to/IMG_20230409_060548.jpg',
+  'place we been to/IMG_20230409_060727.jpg',
+  'place we been to/IMG_20230410_054446.jpg',
+  'place we been to/IMG_20230410_054449.jpg',
+  'place we been to/IMG_20230410_054511.jpg',
+  'place we been to/IMG_20230410_061727.jpg',
+  'place we been to/IMG_20230410_061728.jpg',
+  'place we been to/IMG_20230410_063359.jpg',
+  'place we been to/IMG_20230510_180047.jpg',
+  'place we been to/IMG_20230617_172722.jpg',
+  'place we been to/IMG_20230708_191456.jpg',
+  'place we been to/IMG_20230709_121201.jpg',
+  'place we been to/IMG_20231028_102758.jpg',
+  'place we been to/IMG_20231028_105521.jpg',
+  'place we been to/IMG_20231028_105534.jpg',
+  'place we been to/IMG_20231029_063031.jpg',
+  'place we been to/IMG_20231029_075253.jpg',
+  'my/IMG_20240608_124837.jpg',
+  'my/IMG_20230425_200705.jpg',
+  'my/IMG_20230609_204901.jpg',
+  'my/IMG_20230617_173023.jpg',
+  'my/IMG_20230722_222330.jpg',
+  'my/IMG_20231029_075516.jpg'
+];
+
+// ========== FLOATING HEARTS ==========
+function createFloatingHearts() {
+  const container = document.getElementById('hearts-container');
+  const heartSymbols = ['\u2764', '\u2665', '\u2763', '\u2766', '\uD83C\uDF39', '\uD83C\uDF3A', '\uD83C\uDF38'];
+
+  function spawnHeart() {
+    const heart = document.createElement('span');
+    heart.className = 'floating-heart';
+    heart.textContent = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.fontSize = (Math.random() * 20 + 14) + 'px';
+    heart.style.animationDuration = (Math.random() * 6 + 6) + 's';
+    heart.style.animationDelay = '0s';
+    container.appendChild(heart);
+
+    heart.addEventListener('animationend', () => heart.remove());
+  }
+
+  // Spawn initial batch
+  for (let i = 0; i < 15; i++) {
+    setTimeout(spawnHeart, i * 300);
+  }
+
+  // Continue spawning
+  setInterval(spawnHeart, 800);
+}
+
+createFloatingHearts();
+
+// ========== LOCAL AUDIO PLAYER ==========
+const bgMusic = document.getElementById('bg-music');
+let musicPlaying = false;
+bgMusic.volume = 0.5;
+
+function toggleMusic() {
+  const btn = document.getElementById('music-btn');
+
+  if (musicPlaying) {
+    bgMusic.pause();
+    musicPlaying = false;
+    btn.classList.remove('playing');
+  } else {
+    bgMusic.play();
+    musicPlaying = true;
+    btn.classList.add('playing');
+  }
+}
+
+document.getElementById('music-btn').addEventListener('click', toggleMusic);
+
+// ========== WELCOME MODAL ==========
+document.body.classList.add('modal-open');
+
+document.getElementById('welcome-btn').addEventListener('click', function() {
+  var modal = document.getElementById('welcome-modal');
+  var burst = document.getElementById('pop-burst');
+
+  // Spawn pop particles from center
+  var rect = modal.getBoundingClientRect();
+  var cx = rect.width / 2;
+  var cy = rect.height / 2;
+  var colors = ['#C41E3A', '#E8A0BF', '#D4A843', '#FF69B4', '#FFD700', '#FF1493'];
+
+  for (var i = 0; i < 30; i++) {
+    var particle = document.createElement('div');
+    particle.className = 'pop-particle';
+    var angle = (Math.PI * 2 * i) / 30;
+    var dist = 100 + Math.random() * 200;
+    var tx = Math.cos(angle) * dist;
+    var ty = Math.sin(angle) * dist;
+    var size = 4 + Math.random() * 8;
+    particle.style.cssText = 'left:' + cx + 'px;top:' + cy + 'px;width:' + size + 'px;height:' + size + 'px;background:' + colors[Math.floor(Math.random() * colors.length)] + ';--tx:' + tx + 'px;--ty:' + ty + 'px;';
+    modal.appendChild(particle);
+  }
+
+  // Trigger burst
+  burst.classList.add('active');
+
+  // Start music
+  bgMusic.play().then(function() {
+    musicPlaying = true;
+    document.getElementById('music-btn').classList.add('playing');
+  }).catch(function() {});
+
+  // Dismiss modal after pop effect
+  setTimeout(function() {
+    modal.classList.add('dismissed');
+    document.body.classList.remove('modal-open');
+  }, 600);
+
+  // Remove modal from DOM after transition
+  setTimeout(function() {
+    modal.remove();
+  }, 1200);
+});
+
+// ========== LAZY LOADING ==========
+const lazyObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      const img = entry.target;
+      const src = img.getAttribute('data-src');
+      if (src) {
+        img.src = src;
+        img.onload = function() {
+          img.classList.add('loaded');
+        };
+        img.removeAttribute('data-src');
+      }
+      lazyObserver.unobserve(img);
+    }
+  });
+}, {
+  rootMargin: '200px'
+});
+
+document.querySelectorAll('.lazy-img').forEach(function(img) {
+  lazyObserver.observe(img);
+});
+
+// ========== SCROLL ANIMATIONS ==========
+const scrollObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      scrollObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+});
+
+document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(function(el) {
+  scrollObserver.observe(el);
+});
+
+// ========== LOVE LETTER PARAGRAPH ANIMATION ==========
+const letterObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      const paras = document.querySelectorAll('.letter-para, .letter-sign');
+      paras.forEach(function(p, i) {
+        setTimeout(function() {
+          p.classList.add('visible');
+        }, i * 500);
+      });
+      letterObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+const loveLetterEl = document.getElementById('love-letter');
+if (loveLetterEl) {
+  letterObserver.observe(loveLetterEl);
+}
+
+// ========== LIGHTBOX ==========
+let currentLightboxIndex = 0;
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+function openLightbox(index) {
+  currentLightboxIndex = index;
+  lightboxImg.src = allPhotos[index];
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  document.body.style.overflow = '';
+  lightboxImg.src = '';
+}
+
+function navigateLightbox(direction) {
+  currentLightboxIndex += direction;
+  if (currentLightboxIndex < 0) currentLightboxIndex = allPhotos.length - 1;
+  if (currentLightboxIndex >= allPhotos.length) currentLightboxIndex = 0;
+  lightboxImg.src = allPhotos[currentLightboxIndex];
+}
+
+// Click handlers for photos
+document.querySelectorAll('.photo-trigger').forEach(function(el) {
+  el.addEventListener('click', function() {
+    const index = parseInt(el.getAttribute('data-index'));
+    openLightbox(index);
+  });
+});
+
+document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.getElementById('lightbox-prev').addEventListener('click', function() { navigateLightbox(-1); });
+document.getElementById('lightbox-next').addEventListener('click', function() { navigateLightbox(1); });
+
+// Click outside image to close
+lightbox.addEventListener('click', function(e) {
+  if (e.target === lightbox) closeLightbox();
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', function(e) {
+  if (!lightbox.classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') navigateLightbox(-1);
+  if (e.key === 'ArrowRight') navigateLightbox(1);
+});
+
+// ========== CONFETTI ==========
+const confettiCanvas = document.getElementById('confetti-canvas');
+const confettiCtx = confettiCanvas.getContext('2d');
+let confettiFired = false;
+let confettiPieces = [];
+
+function resizeConfettiCanvas() {
+  confettiCanvas.width = window.innerWidth;
+  confettiCanvas.height = window.innerHeight;
+}
+
+resizeConfettiCanvas();
+window.addEventListener('resize', resizeConfettiCanvas);
+
+function fireConfetti() {
+  if (confettiFired) return;
+  confettiFired = true;
+
+  const colors = ['#C41E3A', '#E8A0BF', '#D4A843', '#FF69B4', '#FFD700', '#FF1493', '#ff6b6b', '#FDF6E3'];
+
+  for (let i = 0; i < 150; i++) {
+    confettiPieces.push({
+      x: Math.random() * confettiCanvas.width,
+      y: -20 - Math.random() * 200,
+      w: Math.random() * 10 + 5,
+      h: Math.random() * 6 + 3,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      vx: (Math.random() - 0.5) * 6,
+      vy: Math.random() * 4 + 2,
+      rotation: Math.random() * 360,
+      rotationSpeed: (Math.random() - 0.5) * 10,
+      opacity: 1
+    });
+  }
+
+  animateConfetti();
+}
+
+function animateConfetti() {
+  confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+  let alive = false;
+
+  confettiPieces.forEach(function(p) {
+    if (p.opacity <= 0) return;
+    alive = true;
+
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vy += 0.08;
+    p.rotation += p.rotationSpeed;
+
+    if (p.y > confettiCanvas.height + 20) {
+      p.opacity -= 0.02;
+    }
+
+    confettiCtx.save();
+    confettiCtx.translate(p.x, p.y);
+    confettiCtx.rotate(p.rotation * Math.PI / 180);
+    confettiCtx.globalAlpha = Math.max(0, p.opacity);
+    confettiCtx.fillStyle = p.color;
+    confettiCtx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+    confettiCtx.restore();
+  });
+
+  if (alive) {
+    requestAnimationFrame(animateConfetti);
+  } else {
+    confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+    confettiPieces = [];
+  }
+}
+
+// Trigger confetti when finale section is visible
+const finaleObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      fireConfetti();
+      finaleObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+const finaleTrigger = document.getElementById('finale-trigger');
+if (finaleTrigger) {
+  finaleObserver.observe(finaleTrigger);
+}
+</script>
+</body>
+</html>
