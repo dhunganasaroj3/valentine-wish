@@ -527,13 +527,7 @@ img {
 }
 
 .love-letter::before {
-  content: '';
-  position: absolute;
-  left: 60px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: rgba(196, 30, 58, 0.2);
+  display: none;
 }
 
 .letter-date {
@@ -790,7 +784,7 @@ img {
   }
 
   .her-hero-frame {
-    max-width: 90%;
+    max-width: 95%;
   }
 
   .love-letter {
@@ -804,7 +798,17 @@ img {
 
   .photo-card img,
   .me-grid .photo-card img {
-    height: 220px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .masonry-item img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .masonry-item.featured {
+    max-height: none;
   }
 
   .section-her,
